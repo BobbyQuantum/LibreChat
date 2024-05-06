@@ -23,6 +23,7 @@ const {
   TraversaalSearch,
   StructuredWolfram,
   TavilySearchResults,
+  HomeAssistant,
 } = require('../');
 const { loadToolSuite } = require('./loadToolSuite');
 const { loadSpecs } = require('./loadSpecs');
@@ -167,6 +168,7 @@ const loadTools = async ({
     'azure-ai-search': functions ? StructuredACS : AzureAISearch,
     CodeBrew: CodeBrew,
     traversaal_search: TraversaalSearch,
+    'home-assistant': HomeAssistant,
   };
 
   const openAIApiKey = await getOpenAIKey(options, user);

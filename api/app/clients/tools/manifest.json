@@ -197,5 +197,24 @@
     "description": "Use 'CodeBrew' to virtually interpret Python, Node, C, C++, Java, C#, PHP, MySQL, Rust or Go code.",
     "icon": "https://imgur.com/iLE5ceA.png",
     "authConfig": []
+  },
+  {
+    "name": "Home Assistant",
+    "pluginKey": "home-assistant",
+    "description": "Call various home automation functions using the Home Assistant API.",
+    "icon": "https://i.imgur.com/CMZDfuy.png",
+    "isAuthRequired": "true",
+    "authConfig": [
+      {
+        "authField": "HA_API_KEY",
+        "label": "Home Assistant API Key",
+        "description": "You can generate an API key from the user profile screen in Home Assistant."
+      },
+      {
+        "authField": "HA_API_URL",
+        "label": "Home Assistant API URL",
+        "description": "Enter the URL to your home assistant instance."
+      }
+    ]
   }
 ]
